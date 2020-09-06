@@ -1,0 +1,19 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    margin: 0;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    background-image: src="./assets/topo.jpg";
+  }
+  
+footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+  }
+.copyright{
+    text-align: center;
+    color:rgb(141, 141, 141);
+}
