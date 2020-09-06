@@ -5,7 +5,8 @@ body {
     margin: 0;
     padding-bottom: 100px;
     box-sizing: border-box;
-    background-image: src="./assets/topo.jpg";
+    background: url("./Assets/Images/topo.jpg") no-repeat center fixed;
+    background-size: cover;
   }
   
 footer {
