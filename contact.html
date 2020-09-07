@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonny's Portfolio</title>
-    <meta name="description" content="Hw 2 showing off bootstrap">
+    <meta name="description" content="Portfolio contact page">
     <meta name="author" content="Jonny Kemp">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -13,11 +13,13 @@
 </head>
 <body>
     <header>
+        <!-- using bootstrap nav bar component, outside of containter to span entire page and stick to top -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand bg-info" href="#">Jonny Kemp</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- active added to the class and sr-only span added to the current page -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -37,29 +39,33 @@
     <main>
         <section class="container">
             <div class="row">
+                <!-- setting box sizing at screen breaks and background for main content -->
                 <div class="col-lg-8 col-md-7 col-sm my-5 mx-3 bg-white">
                     <div class="row">
+                        <!-- Setting text color, margins/padding, as well as a bottom border for title -->
                         <div class="col text-info border-bottom p-2 m-4">
                             <h1>Contact</h1>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-9 m-4">
+                            <!-- using bootstrap form component -->
                             <form>
                                 <div class="form-group">
-                                  <label for="Name">Name</label>
-                                  <input type="text" class="form-control" id="InputName" aria-describedby="name" placeholder="Enter Name">
+                                    <label for="Name">Name</label>
+                                    <input type="text" class="form-control" id="InputName" aria-describedby="name" placeholder="Enter Name">
                                 </div>
                                 <div class="form-group">
-                                  <label for="Email">Email</label>
-                                  <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+                                    <label for="Email">Email</label>
+                                    <input type="email" class="form-control" id="InputEmail" placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <label for="Message">Message</label>
                                     <textarea class="form-control" id="InputTextarea" placeholder="Message" rows="3"></textarea>
-                                  </div>
+                                    </div>
+                                <!-- styling button using info and padding -->
                                 <button type="submit" class="btn btn-info py-3 px-5">Submit</button>
-                              </form>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -67,6 +73,7 @@
         </section>
     </main>
 
+    <!-- two divs make up the foorter with different padding bg bootstrap classes used to color them. Outside of main container, and targeted with style.css -->
     <footer>
         <div class="p-1 mg-1 bg-info"></div>
         <div class="p-3 bg-secondary">

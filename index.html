@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonny's Portfolio</title>
-    <meta name="description" content="Hw 2 showing off bootstrap">
+    <meta name="description" content="Portfolio about page">
     <meta name="author" content="Jonny Kemp">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -13,11 +13,13 @@
 </head>
 <body>
     <header>
+        <!-- using bootstrap nav bar component, outside of containter to span entire page and stick to top -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand bg-info" href="#">Jonny Kemp</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- active added to the class and sr-only span added to the current page -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -37,18 +39,19 @@
     <main>
         <section class="container">
             <div class="row">
+                <!-- setting box sizing at screen breaks and background for main content -->
                 <div class="col-lg-8 col-md-7 col-sm my-5 mx-3 bg-white">
                     <div class="row">
+                        <!-- Setting text color, margins/padding, as well as a bottom border for title -->
                         <div class="col text-info border-bottom p-2 m-4">
                             <h1>About Me</h1>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
+                            <!-- float left keeps the photo where it needs to be on the left, and gets the text to wrap around it -->
                             <img src="./Assets/Images/bananas.jpg" class="float-left mr-3" alt="A generic square placeholder image with rounded corners in a figure.">
                             <p>I Geek out over Geography, make maps, crunch numbers/code on computers, and generally play around with stuff. Life is short so do what you love, and I love a lot of different things. So I thought I would build a website to show off some of the exploits my monkey brain comes up with from time to time. This is a constant work in progress. It serves as a repository for me to brain dump all things work, life, and play. None of it is exhaustive or meant to be a walk through, but if you have questions about any of it please reach out to me.</p>
-                        </div>
-                        <div class="col-8">
                         </div>
                     </div>
                     <div class="row">
@@ -61,6 +64,7 @@
         </section>
     </main>
 
+    <!-- two divs make up the foorter with different padding bg bootstrap classes used to color them. Outside of main container, and targeted with style.css -->
     <footer>
         <div class="p-1 mg-1 bg-info"></div>
         <div class="p-3 bg-secondary">
